@@ -1,0 +1,53 @@
+<mat-toolbar>
+    Developer Related Details
+
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+
+        <img [src] ="ImagePath" class ="avatar">
+        <h4 class="name">Keerthana Kumar</h4>
+        <p class="designation">Software Engineer</p>
+        <p class="office">Dorustree</p>
+        
+        <button mat-button class="menu-button">
+            <mat-icon>home</mat-icon>
+            <a class="links" [routerLink]='["home"]' routerLinkActive="active"><span>Home</span></a>            
+            
+        </button><br>
+
+
+
+        <button mat-button class="menu-button">
+            <mat-icon>person</mat-icon>
+            <a class="links" [routerLink]='["profile"]' routerLinkActive="active"><span>Profile</span></a>            
+        </button><br>
+
+        <button mat-button class="menu-button">
+            <mat-icon>info</mat-icon>
+            <a class="links" [routerLink]='["about"]' routerLinkActive="active"><span>About</span></a>            
+
+        </button><br>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button">
+            <mat-icon>help</mat-icon>
+            <a class="links" [routerLink]='["help"]' routerLinkActive="active"><span>Help</span></a>            
+
+        </button><br>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <div class="content mat-elevation-z8">
+            
+            <router-outlet></router-outlet>
+        </div>
+        <div class="footer">
+           <h2>Footer</h2>
+        </div>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
