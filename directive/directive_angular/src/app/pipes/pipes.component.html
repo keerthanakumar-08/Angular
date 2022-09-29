@@ -1,0 +1,22 @@
+<div style = "width:100%;">
+    <div style = "border:solid 2px rgb(34, 5, 121);">
+      <h3>Uppercase Pipe</h3>
+      <b>{{title | uppercase}}</b><br/>
+      <h3>Lowercase Pipe</h3>
+      <b>{{title | lowercase}}</b>
+      <h3>Currency Pipe</h3>
+      <b>{{400.00 | currency:"USD"}}</b><br/>
+      <b>{{500.08 | currency:"USD":true}}</b>
+      <h3>Date pipe</h3>
+      <b>{{today | date:'d/M/y'}}</b><br/>
+      <b>{{today | date:'shortTime'}}</b>
+      <h3>Decimal Pipe</h3>
+      <b>{{ 123456.7890 | number: '3.4-4' }}</b>
+      <h3>Json Pipe</h3>
+      <b>{{ pipeJson | json }}</b>
+      <h3>Percent Pipe</h3>
+      <b>{{00.1234 | percent}}</b>
+      <h3>Slice Pipe</h3>
+      <b>{{month | slice:3:8}}</b>
+    </div>
+   </div>

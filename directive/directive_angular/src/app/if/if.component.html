@@ -1,0 +1,21 @@
+
+<h1>Example For ngIf</h1>
+
+<input [(ngModel)]="showContent" type="checkbox"/> Show Me 
+
+<br>
+
+<div *ngIf="showContent; else message">
+
+  A jurney of angular development
+
+  <button ejs-button cssClass='e-link'><a href="https://books.google.co.in/books?id=pv83EAAAQBAJ&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false" 
+    
+    target='_blank'>Go to google</a></button>`
+
+</div>
+<br>
+<ng-template #message>
+  Click the checkbox above to read the message!
+</ng-template>
+
